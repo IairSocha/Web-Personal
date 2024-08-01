@@ -8,13 +8,9 @@
 <h2>Lugares turisticos de Zaragoza:</h2>
 
 <ul>
-    <li>Ruta de Caesaraugusta.</li>
-    <li>La Lonja.</li>                
-    <li>San Juan de los Panetes. </li>
-    <li>El Convento del Santo Sepulcro. </li>
-    <li>Torreón Fortea.</li>
-    <li>Puerta del Carmen.</li>
-    <li>La Romareda</li>
+    @foreach(string Lugar in ViewBag.LugaresTuristicos){
+      <li>@Lugar</li>
+    }
 </ul>
 <section>
   <img src="~/img/Zaragoza escudo.png" height="220" width="200">

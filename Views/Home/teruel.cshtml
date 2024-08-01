@@ -8,13 +8,9 @@
 <h2>Lugares turisticos de Teruel:</h2>
 
 <ul>
-    <li>Catedral de Teruel.</li>
-    <li>Dinópolis.</li>                
-    <li>Paisaje protegido de los Pinares de Rodeno.</li>
-    <li>Las torres de Teruel.</li>
-    <li>Esquí en Valdelinares y Javalambre.</li>
-    <li>Mausoleo de los Amantes de Teruel.</li>
-    <li>escalinata del óvalo</li>
+    @foreach(string Lugar in ViewBag.LugaresTuristicos){
+      <li>@Lugar</li>
+    }
 </ul>
 <section>
     <img src="~/img/t_rex_1.jpg" height="300" width="400">

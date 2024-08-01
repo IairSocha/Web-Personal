@@ -15,10 +15,19 @@ public class HomeController : Controller
 
     public IActionResult Index() => View();
     public IActionResult form() => View();
-    public IActionResult huesca() => View();
-    public IActionResult teruel() => View();
+    public IActionResult huesca(){
+        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosHuesca;
+        return View();
+    }
+    public IActionResult teruel(){
+        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosTeruel;
+        return View();
+    }
+    public IActionResult zaragoza(){
+        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosZaragoza;
+        return View();
+    }
     public IActionResult thankyou() => View();
-    public IActionResult zaragoza() => View();
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

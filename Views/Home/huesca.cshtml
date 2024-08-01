@@ -6,14 +6,11 @@
 <h2>¿Que es Huesca?</h2>
 <h3>Huesca es una ciudad y municipio español, capital de la provincia homónima y de la comarca de la Hoya de Huesca, situada al norte de la comunidad autónoma de Aragón.</h3>
 <h2>Lugares turisticos de Huesca:</h2>
+
 <ul>
-    <li>Parque Nacional de Ordesa y Monte Perdido, el corazón de Pirineos.</li>
-    <li>Selva de Oza, paseo entre ibones.</li>
-    <li>Muralla de Finestres, una maravilla natural.</li>
-    <li>Valle de Hecho, rutas para todos.</li>
-    <li>Valle de Tena, pueblos y cumbres.</li>
-    <li>Cañón de Añisclo, forjado por el tiempo.</li>
-    <li>Posets-Maladeta, paisajes sorprendentes.</li>
+    @foreach(string Lugar in ViewBag.LugaresTuristicos){
+      <li>@Lugar</li>
+    }
 </ul>
 <section>
     <img src="~/img/catedral huesca.png" height="220" width="300">
