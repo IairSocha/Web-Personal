@@ -13,35 +13,12 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-    public IActionResult form()
-    {
-        return View();
-    }
-    public IActionResult huesca()
-    {
-        return View();
-    }
-    public IActionResult teruel()
-    {
-        return View();
-    }
-    public IActionResult thankyou()
-    {
-        return View();
-    }
-    public IActionResult zaragoza()
-    {
-        return View();
-    }
+    public IActionResult Index() => View();
+    public IActionResult form() => View();
+    public IActionResult huesca() => View();
+    public IActionResult teruel() => View();
+    public IActionResult thankyou() => View();
+    public IActionResult zaragoza() => View();
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
