@@ -1,0 +1,209 @@
+/* Estilos generales */
+body {
+  background-color: #333333; /* Fondo gris oscuro */
+  color: #CCCCCC; /* Texto gris claro */
+  margin: 0 3%; /* Añadir margen horizontal */
+  font-family: Arial, sans-serif; /* Fuente genérica */
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #555555; /* Fondo gris medio */
+  border-bottom: 2px solid #FF7B00; /* Borde inferior naranja */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el nav esté por encima del contenido */
+}
+
+header img {
+  width: 300px; /* Ajustar el ancho de la imagen */
+  height: auto;
+}
+/* Estilos para la sección de "¿Qué es Aragón?" */
+.center-text {
+  text-align: center;
+  border: 3px solid #FF7B00; /* Borde color naranja */
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2em;
+  font-family: 'Georgia', serif; /* Efecto de fuente */
+  background-color: #444444; /* Fondo gris oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  margin-bottom: 20px;
+}
+
+.center-texta {
+  text-align: justify;
+  border: 2px solid #EC8208; /* Borde color naranja claro */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: 'Verdana', sans-serif; /* Efecto de fuente */
+  background-color: #555555; /* Fondo gris medio */
+  color: #CCCCCC; /* Texto gris claro */
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  color: #CCCCCC; /* Texto gris claro */
+  text-decoration: none; /* Sin subrayado enlaces */
+  font-weight: bold; /* Texto en negrita */
+  padding: 5px 10px; /* Espacio alrededor de los enlaces */
+}
+
+nav li a:hover {
+  background-color: #EC8208; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el main */
+main {
+  margin-top: 160px; /* Evita que el contenido quede bajo el header fijo */
+  padding: 20px;
+}
+
+main h1,
+main h2,
+main h3,
+main h4 {
+  text-align: center;
+}
+
+/* Estilos para la sección "¿CÓMO IR DE UN LADO A OTRO EN ARAGÓN?" */
+h1 {
+  text-align: center;
+  border: 3px solid #FF7B00; /* Borde color naranja */
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 2em;
+  font-family: 'Georgia', serif; /* Efecto de fuente */
+  background-color: #444444; /* Fondo gris oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  margin-bottom: 20px;
+}
+
+.textb {
+  text-align: justify;
+  border: 2px solid #EC8208; /* Borde color naranja claro */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: 'Verdana', sans-serif; /* Efecto de fuente */
+  background-color: #555555; /* Fondo gris medio */
+  color: #CCCCCC; /* Texto gris claro */
+}
+main{
+  margin-top: 450px;}
+
+main p {
+  text-align: justify; /* Alineación justificada */
+}
+#sede{
+margin-left:720px;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Envuelve los elementos si son muchos */
+}
+
+.main-container > * {
+  margin: 10px; /* Espacio entre elementos dentro del contenedor */
+}
+
+/* Estilos para el footer */
+footer {
+  text-align: center;
+  background-color: #555555; /* Fondo gris medio */
+  color: #CCCCCC; /* Texto gris claro */
+  padding: 20px;
+  border-top: 2px solid #FF7B00; /* Borde superior naranja */
+}
+
+footer a {
+  color: #CCCCCC; /* Texto gris claro */
+  text-decoration: none; /* Sin subrayado enlaces */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos específicos para la sección de reviews */
+.sec2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Envuelve los elementos si son muchos */
+  gap: 15px; /* Espacio entre elementos */
+  padding: 20px;
+}
+
+.sec2 h3 {
+  border: 2px solid #333333; /* Borde sólido gris oscuro */
+  background-color: #888888; /* Fondo gris medio */
+  padding: 10px;
+  text-align: center;
+}
+
+.sec2 h3:hover {
+  text-decoration: underline solid orange; /* Decoración al pasar el mouse */
+}
+
+/* Estilos para el video */
+main iframe {
+  display: block;
+  margin: 20px auto; /* Centrado horizontal y margen superior */
+}
+main h3.textb {
+  text-align: justify;
+  color: #CCCCCC; /* Texto gris claro */
+  margin-bottom: 20px;
+}
+
+.bus-list {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  background-color: #444444;
+  border-radius: 5px;
+  padding: 15px;
+  list-style-type: none;
+  gap: 60px; /* Espacio horizontal entre los elementos */
+}
+
+.bus-list li {
+  margin: 0;
+}
+
+.bus-list li a {
+  color: #333333; /* Texto gris oscuro */
+  background-color: #EC8208; /* Fondo naranja */
+  padding: 10px 20px; /* Espacio alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bus-list li a:hover {
+  background-color: #FF7B00; /* Fondo naranja más claro al pasar el mouse */
+  color: #FFFFFF; /* Texto blanco al pasar el mouse */
+}

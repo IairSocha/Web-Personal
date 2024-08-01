@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="thankyou.html" method="post">
+        <h3>Ingrese su nombre</h3><br>
+        <input type="text" name="usuario" placeholder="Nombre usuario aquí"> <br>
+        <h3>ingrese su Email</h3>
+        <input type="email">
+       <h3> ¿Que le interesa de ARAGÓN?</h3><br>
+       <input type="checkbox" name="cb-atracciones turísticas" value="interesa" > Atracciones turísticas <br>
+       <input type="checkbox" name="cb-comida" value="interesa" > La comida<br>
+       <input type="checkbox" name="cb-cultura región" value="interesa" > Cultura en general <br>
+        <h3>¿Cual es su presupuesto de viaje?</h3><br>
+        <input type="radio" name="¿Cual es su presupuesto de viaje?" value="muy alto"> muy alto <br>
+        <input type="radio" name="¿Cual es su presupuesto de viaje?" value="alto">alto <br>
+        <input type="radio" name="¿Cual es su presupuesto de viaje?" value="intermedio"> mas o menos <br>
+        <input type="radio" name="¿Cual es su presupuesto de viaje?" value="bajo">bajo <br>
+        <input type="radio" name="¿Cual es su presupuesto de viaje?" value="muy bajo">muy bajo <br>
+        <h3>¿Que día desearia irse a Aragón???</h3>
+       <input type="date"> <br>
+       <h3>Ingrese su número de teléfono para comunicarse con nosotros</h3>
+      <input type="tel">
+        <h3>¿Que tan emocionado esta de viajar a aragón del 1 al 10?</h3>
+         <input type="range" max="11" min="2" step="1">
+       <h3> ingrese la cantidad de días que quieren estar en aragón </h3>
+       <input type="number" max="121" min="1" step="1"> 
+       <h3>¿De que pais sos o son?</h3>
+       <input type="text" name="pais de origen" placeholder="Escribí el nombre de tu país aquí" >
+       <h3> ¿Alguna duda que tengas del viaje a aragón?</h3>
+       <textarea name="ingreso usuraio duda" rows="15" cols="60"> </textarea>
+
+       <input type="submit" value="enviar respuesta" class="A"> <br>
+       <input type="reset" value="resetear formulario" class="B"> <br>
+        
+     </form>
+</body>
+</html>
