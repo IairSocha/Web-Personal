@@ -3,17 +3,64 @@
   ViewData["Img"] = "/img/bandera zaragoza.png";
 }
 
-<h2>¿Que es Zaragoza?</h2>
-<h3>Zaragoza es una ciudad y un municipio de España, capital de la provincia homónima y de la comunidad autónoma de Aragón. Perteneciente a la Comarca Central, tiene un régimen legal especial como capital de Aragón. Es el quinto municipio más poblado de España según las cifras oficiales de población del INE, que le otorgan 682.513 habitantes.</h3>
-<h2>Lugares turisticos de Zaragoza:</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+      <img src="images aragón/aragon turismo.png" height="220" width="500">    
+    
 
-<ul>
-    @foreach(string Lugar in ViewBag.LugaresTuristicos){
-      <li>@Lugar</li>
-    }
-</ul>
-<section>
-  <img src="~/img/Zaragoza escudo.png" height="220" width="200">
-  <h2>Video de la experiencia Zaragoza</h2>
-  <a href= "https://www.youtube.com/watch?v=2Al_tKWhEvI"> CLICK AQUÍ</a> 
-</section>
+    <nav>
+          <ul>
+
+      
+          <li>  <a href='@Url.Action("Index", "Home")'> Pagina Principal</a>  </li>
+          <li>  <a href='@Url.Action("huesca", "Home")'> Huesca</a></li>
+          <li>  <a href='@Url.Action("zaragoza", "Home")'> Zaragoza</a></li>
+          <li>  <a href='@Url.Action("teruel", "Home")'> Teruel</a></li>
+  
+  
+          </ul>
+
+    </nav>
+    <h1>Zaragoza</h1>
+    </header>
+    <main class="zaragoza-section">
+      <h2 class="zaragoza-heading">¿Qué es Zaragoza?</h2>
+      <h3 class="zaragoza-description">Zaragoza es una ciudad y un municipio de España, capital de la provincia homónima y de la comunidad autónoma de Aragón. Perteneciente a la Comarca Central, tiene un régimen legal especial como capital de Aragón. Es el quinto municipio más poblado de España según las cifras oficiales de población del INE, que le otorgan 682.513 habitantes.</h3>
+      <h2 class="zaragoza-heading">Lugares turísticos de Zaragoza:</h2>
+      <ul class="zaragoza-list">
+          <li class="zaragoza-list-item">Ruta de Caesaraugusta.</li>
+          <li class="zaragoza-list-item">La Lonja.</li>
+          <li class="zaragoza-list-item">San Juan de los Panetes.</li>
+          <li class="zaragoza-list-item">El Convento del Santo Sepulcro.</li>
+          <li class="zaragoza-list-item">Torreón Fortea.</li>
+          <li class="zaragoza-list-item">Puerta del Carmen.</li>
+          <li class="zaragoza-list-item">La Romareda</li>
+      </ul>
+      <section class="zaragoza-audioguides">
+          <h2 class="zaragoza-heading">¿Querés mejorar tu experiencia en Zaragoza? ¡Descargate estas audioguías!</h2>
+      </section>
+      <section class="zaragoza-video-section">
+          <img src="images aragón/Zaragoza escudo.png" height="220" width="200" class="zaragoza-video-image" alt="Zaragoza escudo">
+          <h2 class="zaragoza-heading">Video de la experiencia Zaragoza</h2>
+          <a href="https://www.youtube.com/watch?v=2Al_tKWhEvI" class="zaragoza-video-link">CLICK AQUÍ</a>
+      </section>
+  </main>
+  
+    <footer>
+
+        <h2> YA LE CONVENCIMOS DE IR A ARAGÓN? INSCRIBASE EN EL SIGUIENTE FORM!!!!!</h2>
+        <a href='/form'> Click ACÁ</a>
+  <h5>© 2024 Aragón Turismo - telefono: 976 282 181 - email: aragonturismo@gmail.com</h5>
+    </footer>
+</body>
+</html>

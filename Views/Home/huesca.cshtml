@@ -3,17 +3,79 @@
   ViewData["Img"] = "/img/bandera de huesca.png";
 }
 
-<h2>¿Que es Huesca?</h2>
-<h3>Huesca es una ciudad y municipio español, capital de la provincia homónima y de la comarca de la Hoya de Huesca, situada al norte de la comunidad autónoma de Aragón.</h3>
-<h2>Lugares turisticos de Huesca:</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="images aragón/aragon turismo.png" height="220" width="500"> 
+   
+    <nav>
+          <ul>
 
-<ul>
-    @foreach(string Lugar in ViewBag.LugaresTuristicos){
-      <li>@Lugar</li>
-    }
-</ul>
-<section>
-    <img src="~/img/catedral huesca.png" height="220" width="300">
-    <h2>Video de la experiencia Huesca</h2>
-    <a href= "https://www.youtube.com/watch?v=yp-xXz_rkIw"> CLICK AQUÍ</a>
-</section>
+          
+          <li> <a href='@Url.Action("Index", "Home")'> Pagina Principal</a>  </li>
+          <li>  <a href='@Url.Action("huesca", "Home")'> Huesca</a></li>
+          <li>  <a href='@Url.Action("zaragoza", "Home")'> Zaragoza</a></li>
+          <li>  <a href='@Url.Action("teruel", "Home")'> Teruel</a></li>
+  
+  
+
+          </ul>
+
+    </nav>
+
+            <h1> Huesca</h1>
+    </header>
+    <main class="contenido-huesca">
+        <section class="seccion">
+            <h2 class="titulo-seccion">¿Qué es Huesca?</h2>
+            <p class="descripcion-seccion">Huesca ​es una ciudad y municipio español, capital de la provincia homónima y de la comarca de la Hoya de Huesca, situada al norte de la comunidad autónoma de Aragón.</p>
+        </section>
+    
+        <section class="seccion">
+            <h2 class="titulo-seccion">Lugares turísticos de Huesca:</h2>
+            <ul class="lista-lugares">
+                <li>Parque Nacional de Ordesa y Monte Perdido, el corazón de Pirineos.</li>
+                <li>Selva de Oza, paseo entre ibones.</li>
+                <li>Muralla de Finestres, una maravilla natural.</li>
+                <li>Valle de Hecho, rutas para todos.</li>
+                <li>Valle de Tena, pueblos y cumbres.</li>
+                <li>Cañón de Añisclo, forjado por el tiempo.</li>
+                <li>Posets-Maladeta, paisajes sorprendentes.</li>
+            </ul>
+        </section>
+    
+        <section class="seccion">
+            <h2 class="titulo-seccion">Los mejores platillos de Huesca:</h2>
+            <ul class="lista-platillos">
+                <li>LA LONGANIZA DE GRAUS.</li>
+                <li>MIGAS A LA PASTORA</li>
+            </ul>
+            <div class="imagenes-platillos">
+                <img src="images aragón/Longaniza.jpg" alt="Longaniza de Graus" class="imagen-platillo">
+                <img src="images aragón/migas-a-la-pastora-con.jpg" alt="Migas a la pastora" class="imagen-platillo">
+            </div>
+        </section>
+    
+        <section class="seccion-video">
+            <img src="images aragón/catedral huesca.png" alt="Catedral de Huesca" class="imagen-catedral">
+            <h2 class="titulo-video">Video de la experiencia Huesca</h2>
+            <a href="https://www.youtube.com/watch?v=yp-xXz_rkIw" class="enlace-video">CLICK AQUÍ</a>
+        </section>
+    </main>
+    
+    <footer>
+
+        <h2> YA LE CONVENCIMOS DE IR A ARAGÓN? INSCRIBASE EN EL SIGUIENTE FORM!!!!!</h2>
+        <a href='/form'> Click ACÁ</a>
+  <h5>© 2024 Aragón Turismo - telefono: 976 282 181 - email: aragonturismo@gmail.com</h5>
+    </footer>
+</body>
+</html>

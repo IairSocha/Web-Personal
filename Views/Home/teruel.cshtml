@@ -1,19 +1,70 @@
 @{
-  ViewData["Title"] = "Teruel";
+  ViewData["Title"] = "teruel";
   ViewData["Img"] = "/img/Teruel.gif";
 }
 
-<h2>¿Que es Teruel?</h2>
-<h3>Teruel es una ciudad de la comunidad autónoma de Aragón, al este de España. Situada en una zona montañosa de gran altitud, es famosa por su clásica arquitectura mudéjar, un estilo que combina elementos góticos e islámicos.</h3>
-<h2>Lugares turisticos de Teruel:</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <img src="images aragón/aragon turismo.png" height="220" width="500"> 
+    
+   
+    <nav>
+          <ul>
 
-<ul>
-    @foreach(string Lugar in ViewBag.LugaresTuristicos){
-      <li>@Lugar</li>
-    }
-</ul>
-<section>
-    <img src="~/img/t_rex_1.jpg" height="300" width="400">
-    <h2>Video de la experiencia Teruel</h2>
-    <a href= "https://www.youtube.com/watch?v=36ooHMSnaPQ"> CLICK AQUÍ</a>
-</section>
+          <li>  <a href='@Url.Action("Index", "Home")'> Pagina Principal</a>  </li>
+          <li>  <a href='@Url.Action("huesca", "Home")'> Huesca</a></li>
+          <li>  <a href='@Url.Action("zaragoza", "Home")'> Zaragoza</a></li>
+          <li>  <a href='@Url.Action("teruel", "Home")'> Teruel</a></li>
+  
+  
+
+
+          </ul>
+     
+    </nav>
+    <h1>Teruel</h1>
+    </header>
+    <main class="teruel-section">
+        <h2 class="teruel-heading">¿Qué es Teruel?</h2>
+        <h3 class="teruel-description">Teruel es una ciudad de la comunidad autónoma de Aragón, al este de España. Situada en una zona montañosa de gran altitud, es famosa por su clásica arquitectura mudéjar, un estilo que combina elementos góticos e islámicos.</h3>
+        <h2 class="teruel-heading">Lugares turísticos de Teruel:</h2>
+        <ul class="teruel-list">
+            <li class="teruel-list-item">Catedral de Teruel.</li>
+            <li class="teruel-list-item">Dinópolis.</li>
+            <li class="teruel-list-item">Paisaje protegido de los Pinares de Rodeno.</li>
+            <li class="teruel-list-item">Las torres de Teruel.</li>
+            <li class="teruel-list-item">Esquí en Valdelinares y Javalambre.</li>
+            <li class="teruel-list-item">Mausoleo de los Amantes de Teruel.</li>
+            <li class="teruel-list-item">Escalinata del óvalo.</li>
+        </ul>
+        <h2 class="teruel-heading">¡Visita casas rurales en Teruel!</h2>
+        <div class="teruel-images">
+            <img src="images aragón/ocupacion-casas-rurales-teruel-san-jorge-002.jpg" class="teruel-image">
+            <img src="images aragón/Casa rural.jpg" class="teruel-image">
+            <img src="images aragón/Exterior-casa_big-copia.jpg" class="teruel-image">
+        </div>
+        <section class="teruel-video-section">
+            <img src="images aragón/t_rex_1.jpg" height="300" width="400" class="teruel-video-image">
+            <h2 class="teruel-heading">Video de la experiencia Teruel</h2>
+            <a href="https://www.youtube.com/watch?v=36ooHMSnaPQ" class="teruel-video-link">CLICK AQUÍ</a>
+        </section>
+    </main>
+    
+    <footer>
+
+        <h2> YA LE CONVENCIMOS DE IR A ARAGÓN? INSCRIBASE EN EL SIGUIENTE FORM!!!!!</h2>
+        <a href='/form'> Click ACÁ</a>
+  <h5>© 2024 Aragón Turismo - telefono: 976 282 181 - email: aragonturismo@gmail.com</h5>
+    </footer>
+</body>
+</html>

@@ -13,18 +13,20 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index() => View();
-    public IActionResult form() => View();
+    public IActionResult Index() {
+        return View();
+    }
+    public IActionResult form() {
+        return View();
+    }
     public IActionResult huesca(){
-        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosHuesca;
         return View();
     }
     public IActionResult teruel(){
-        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosTeruel;
+
         return View();
     }
     public IActionResult zaragoza(){
-        ViewBag.LugaresTuristicos = Datos.LugaresTuristicosZaragoza;
         return View();
     }
     public IActionResult thankyou() => View();
